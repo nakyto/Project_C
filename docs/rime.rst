@@ -1,0 +1,4 @@
+Rime
+=====
+
+.. doxygenfile:: Rime.h
