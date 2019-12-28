@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}/bin
+libdir=${prefix}/lib
+sharedlibdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: liste
+Description: Liste library
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lliste
+Cflags: -I${includedir}
