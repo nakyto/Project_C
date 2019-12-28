@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}/bin
+libdir=${prefix}/lib
+sharedlibdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: rime
+Description: Rime library
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lrime
+Cflags: -I${includedir}
