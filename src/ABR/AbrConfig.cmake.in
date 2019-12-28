@@ -1,0 +1,9 @@
+# see https://cmake.org/cmake/help/latest/module/CMakePackageConfigHelpers.html
+
+@PACKAGE_INIT@
+
+set_and_check(ABR_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/include")
+set_and_check(ABR_LIB_DIRS "${PACKAGE_PREFIX_DIR}/lib")
+set_and_check(ABR_LIBRARIES Abr)
+
+check_required_components(Abr)
