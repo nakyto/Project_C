@@ -1,7 +1,7 @@
 language: c
 
 compiler:
-  - gcc
+  - cmake
 
 branches:
   only:
