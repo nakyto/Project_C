@@ -2,6 +2,7 @@ language: c
 
 compiler:
   - cmake
+  - make
 
 branches:
   only:
