@@ -2,6 +2,7 @@ c-test-master project
 ==============
 
 [![Travis](https://travis-ci.org/nakyto/Project_C.svg)](https://travis-ci.org/nakyto/Project_C)
+[![Coverage Status](https://coveralls.io/repos/github/nakyto/Project_C/badge.svg)](https://coveralls.io/github/nakyto/Project_C)
 
  For the moment the program is not functional in this totality. The graphical interface (GUI) and documentation are functional , the programs for the rhymes the syllabation is in the course of finalization.
 
