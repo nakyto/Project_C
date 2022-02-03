@@ -18,11 +18,9 @@ jobs:
       run: sudo apt-get install cmake gcc lcov cppcheck python3-pip valgrind flawfinder doxygen graphviz
     - name: ws
       run: ls -al ; pwd ;
-    - name: clone
-      run: git clonne https://github.com/nakyto/Project_C ; cd ./Project_C
    # in git dir
     - name: update_pip
-      run: pip install --user -r ../../docs/requirment.txt
+      run: pip install --user -r ./docs/requirment.txt
     - name: compil
       run: mkdir build ; cd build  
     - name: cmake
