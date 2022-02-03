@@ -16,7 +16,7 @@ jobs:
     - name: install
       run: sudo apt-get install cmake gcc lcov cppcheck python3-pip valgrind flawfinder doxygen graphviz
     - name: update
-      run: pip install --user -r Project_C/docs/requirment.txt
+      run: pip install --user -r ../../docs/requirment.txt
     #- name: configure
     #  run: ./configure
     - name: compil
