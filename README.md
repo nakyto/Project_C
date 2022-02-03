@@ -46,7 +46,7 @@ Usage
 ~~~bash
 $ mkdir build
 $ cd build
-$ cmake ./test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+$ cmake ./src -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
 $ make
 ~~~
 
