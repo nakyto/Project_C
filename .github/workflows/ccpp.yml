@@ -20,9 +20,9 @@ jobs:
     #  run: ls -al ; pwd ;
     # in git dir
     - name: update_pip
-      run: sudo pip install --user -r ./docs/requirements.txt
+      run: pip install -r ./docs/requirements.txt
     - name: compil
-      run: mkdir build ; cd build  
+      run: mkdir build ; cd build
     - name: cmake
       run: cmake ../src -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
     - name: make 
