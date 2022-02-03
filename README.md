@@ -6,6 +6,8 @@ c-test-master project
 
  For the moment the program is not functional in this totality. The graphical interface (GUI) and documentation are functional , the programs for the rhymes the syllabation is in the course of finalization.
 
+**Forked :** https://github.com/chdemko/c-test
+
 ##### Author program
 
 **Graphic interface :**
