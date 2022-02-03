@@ -34,8 +34,8 @@ Installation
 ------------
 
 ~~~bash
-$ sudo apt install cmake gcc lcov cppcheck python-pip valgrind flawfinder doxygen dot
-$ [sudo] pip install [--user] -r c-test/docs/requirements.txt
+$ sudo apt install cmake gcc lcov cppcheck python3-pip valgrind flawfinder doxygen graphviz
+$ [sudo] pip install --user -r Project_C/docs/requirements.txt
 ~~~
 
 Usage
@@ -46,7 +46,7 @@ Usage
 ~~~bash
 $ mkdir build
 $ cd build
-$ cmake ../c-test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+$ cmake ./test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
 $ make
 ~~~
 
