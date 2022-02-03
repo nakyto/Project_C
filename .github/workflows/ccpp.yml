@@ -13,11 +13,20 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - name: install
+      run: sudo apt install cmake gcc lcov cppcheck python-pip valgrind flawfinder doxygen dot
+    - name: update
+      run: pip install --user -r Project_C/docs/requirment.txt
     #- name: configure
     #  run: ./configure
-    - name: make
+    - name: compil
+      run: mkdir build ; cd build ; 
+    - name: cmake
+      run: cmake ../c-test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+    - name: make 
       run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: make test
+      run: make test
+    - name: make covrage
+      run: make coverage
+      
