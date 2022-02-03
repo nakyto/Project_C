@@ -12,20 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    # in server 
     - uses: actions/checkout@v2
-    
+    # in server 
     - name: install_lib
       run: sudo apt-get install cmake gcc lcov cppcheck python3-pip valgrind flawfinder doxygen graphviz
-    - name: ws
-      run: ls -al ; pwd ;
-   # in git dir
+    #- name: ws
+    #  run: ls -al ; pwd ;
+    # in git dir
     - name: update_pip
       run: sudo pip install --user -r ./docs/requirements.txt
     - name: compil
       run: mkdir build ; cd build  
     - name: cmake
-      run: cmake ../c-test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+      run: cmake ../test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
     - name: make 
       run: make
     - name: make test
