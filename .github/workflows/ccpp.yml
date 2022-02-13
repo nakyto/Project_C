@@ -22,7 +22,7 @@ jobs:
     - name: update_pip
       run: pip install -r ./docs/requirements.txt
     - name: compil
-      run: mkdir build ; cd build; cmake ../ -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 ; make
+      run: mkdir build ; cd build; cmake ../ -DBUILD_COVERAGE=1 -DUSE_VALGRIND=1 ; make
     - name: make test
       run: make test
     - name: make covrage
