@@ -11,13 +11,13 @@ branches:
   - master
 
 install:
-  - sudo apt install cmake gcc lcov cppcheck python-pip valgrind flawfinder doxygen dot
-  - sudo pip install --user -r c-test/docs/requirements.txt
+  - sudo apt install cmake gcc lcov cppcheck python-pip valgrind flawfinder doxygen graphviz
+  - sudo pip install --user -r Project_C/docs/requirements.txt
   
 script:
   - mkdir build
   - cd build
-  - cmake ../c-test -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+  - cmake ../Project_C -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
   - make
   - make test
   - make coverage
