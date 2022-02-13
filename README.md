@@ -1,4 +1,4 @@
-c-test-master project
+Project_C
 ==============
 
 [![Travis](https://travis-ci.org/nakyto/Project_C.svg)](https://travis-ci.org/nakyto/Project_C)
