@@ -9,24 +9,31 @@ on:
 jobs:
   build:
 
-    runs-on: trusty
+    runs-on: ubuntu-laste
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
+    
     # in server 
     - name: install_lib
-      run: sudo apt-get install cmake gcc lcov cppcheck python3-pip valgrind flawfinder doxygen graphviz
+      run: |
+        sudo apt-get install cmake gcc lcov cppcheck python3 python3-pip valgrind flawfinder doxygen graphviz
     #- name: ws
     #  run: ls -al ; pwd ;
     # in git dir
     - name: update_pip
-      run: pip install -r ./docs/requirements.txt
+      run: |
+        pip install -r ./docs/requirements.txt
     - name: compil
-      run: mkdir build ; cd build; cmake ../ 
+      run: |
+        mkdir build 
+        cd build
+        cmake ../ 
     - name: make
       run: make
     - name: make test
       run: make test
     - name: make covrage
       run: make coverage
+      
       
