@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-laste
     
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     
     # in server 
     - name: install_lib
