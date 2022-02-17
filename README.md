@@ -1,8 +1,9 @@
 Project_C
 ==============
 
-[![Travis](https://travis-ci.org/nakyto/Project_C.svg)](https://travis-ci.org/nakyto/Project_C)
-[![Coverage Status](https://coveralls.io/repos/github/nakyto/Project_C/badge.svg)](https://coveralls.io/github/nakyto/Project_C)
+ Tarvis.org => [![Travis](https://travis-ci.org/nakyto/Project_C.svg)](https://travis-ci.org/nakyto/Project_C)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/nakyto/Project_C/badge.svg)](https://coveralls.io/github/nakyto/Project_C)-->
+[![C/C++ CI](https://github.com/nakyto/Project_C/actions/workflows/ccpp.yml/badge.svg)](https://github.com/nakyto/Project_C/actions/workflows/ccpp.yml)
 
  For the moment the program is not functional in this totality. The graphical interface (GUI) and documentation are functional , the programs for the rhymes the syllabation is in the course of finalization.
 
@@ -46,7 +47,7 @@ Usage
 ~~~bash
 $ mkdir build
 $ cd build
-$ cmake ../Project_C -DBUILD_COVERAGE=1 -DBUILD_HTML_COVERAGE=1 -DUSE_VALGRIND=1 -DRUN_CPPCHECK=1
+$ cmake ../ 
 $ make
 ~~~
 
@@ -54,20 +55,12 @@ $ make
 
 ~~~bash
 $ make test
-$ make coverage
-$ make html-coverage
 ~~~
 
 ### Check style
 
 ~~~bash
 $ make cclint
-~~~
-
-### Run flaw finder
-
-~~~bash
-$ make flawfinder
 ~~~
 
 ### Build the docs
