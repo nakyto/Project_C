@@ -26,10 +26,9 @@ jobs:
         pip install -r ./docs/requirements.txt
     - name: compil
       run: |
-          ls 
-          pwd
-  #    mkdir build 
-    #    cd build
+        ls ../
+
+    # mkdir build ; cd build
     #    cmake ../ 
     #- name: make
     #  run: make
